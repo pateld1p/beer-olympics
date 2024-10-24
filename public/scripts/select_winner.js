@@ -1,4 +1,4 @@
-import { db } from './firebase.js'; // Import the Firestore database
+import { db } from '/scripts/firebase.js';
 import { doc, updateDoc, increment } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js'; // Import Firestore functions
 
 // Get the game ID from the URL parameters

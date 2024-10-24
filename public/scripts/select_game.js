@@ -1,4 +1,4 @@
-import { db } from './firebase.js'; // Import the Firestore database
+import { db } from '/scripts/firebase.js';
 import { collection, addDoc, getDocs } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js';
 
 let selectedGame; // Declare selectedGame at a higher scope

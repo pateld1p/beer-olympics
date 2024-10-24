@@ -1,4 +1,4 @@
-import { db } from './firebase.js'; // Import the Firestore database
+import { db } from '/scripts/firebase.js';
 import { collection, addDoc, getDocs } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js';
 
 // Function to add player to Firestore
