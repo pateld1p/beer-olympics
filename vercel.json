@@ -12,6 +12,9 @@
     ],
     "routes": [
         { "src": "/scripts/firebase.js", "dest": "/scripts/firebase.js" },  
+        { "src": "/scripts/app.js", "dest": "/scripts/app.js" },            
+        { "src": "/scripts/score_keeper.js", "dest": "/scripts/score_keeper.js" },
+        { "src": "/scripts/score_winner.js", "dest": "/scripts/score_winner.js" },
         { "src": "/(.*)", "dest": "api/server.js" }  
     ]
 }
