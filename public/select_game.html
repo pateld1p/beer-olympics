@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="scripts/firebase.js"></script>
+    <script type="module" src="scripts/select_game.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Select a Game</h2>
+        <ul id="gameList">
+            <li class="game-item" data-game="Keg Relay Race">Keg Relay Race</li>
+            <li class="game-item" data-game="Beer Pong Gauntlet">Beer Pong Gauntlet</li>
+            <li class="game-item" data-game="Brewskis and Balance">Brewskis and Balance</li>
+            <li class="game-item" data-game="Flip Cup Frenzy">Flip Cup Frenzy</li>
+            <li class="game-item" data-game="Brewmaster's Challenge">Brewmaster's Challenge</li>
+            <li class="game-item" data-game="Stein Sprint">Stein Sprint</li>
+            <li class="game-item" data-game="Drunken Dodgeball">Drunken Dodgeball</li>
+        </ul>
+        <button id="confirmGameButton" disabled>Confirm Game</button>
+    </div>
+
+    <!-- Modal for selecting players -->
+    <div id="playerSelectionModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Select Players</h2>
+            <h3>Team A Players</h3>
+            <div id="teamAPlayersList"></div> <!-- Players for Team A will be appended here -->
+            <h3>Team B Players</h3>
+            <div id="teamBPlayersList"></div> <!-- Players for Team B will be appended here -->
+            <button id="startGameButton">Start Game</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c; /* Dark background */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* General styles for the container */
+.container {
+  background-color: #333;
+  display: flex;
+  flex-direction: column; /* Change to column to stack elements vertically */
+  justify-content: flex-start; /* Align items to the start of the container */
+  width: 80%;
+  margin: 20px auto; /* Center the container */
+  max-height: 100%;
+}
+
+/* Styles for team sections */
+.team {
+  background-color: #4b4b4b; /* Dark background for teams */
+  color: white; /* White text for visibility */
+  margin: 10px; /* Add margin around team sections */
+  border-radius: 5px; /* Rounded corners */
+  flex: 1; /* Allow flex grow to fill space */
+  max-width: 100%; /* Limit width to avoid overflow */
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Scoreboard styles */
+#scoreBoard {
+  background-color: #444; /* Darker background for scoreboard */
+  color: white; /* White text */
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px; /* Add space above the scoreboard */
+}
+
+/* Button styles */
+button {
+  margin-top: 10px; /* Add space above buttons */
+  padding: 10px 15px;
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+h2 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px;
+  border-bottom: 1px solid #444; /* Light border for list items */
+}
+
+.addPlayer {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #555; /* Grey button background */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.addPlayer:hover {
+  background-color: #777; /* Button hover effect */
+}
+
+#selectGameButton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#selectGameButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+#confirmGameButton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#confirmGameButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.game-item {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+  background-color: #444; /* Background color for game items */
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.game-item:hover {
+  background-color: #555; /* Darker background on hover */
+}
+
+.game-item.selected {
+  background-color: #007bff; /* Highlight selected game */
+  color: white; /* Change text color for selected item */
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #363232;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Player selection styles */
+.player-item {
+  margin: 5px 0;
+}
+
+label {
+  margin-left: 5px; /* Space between checkbox and label */
+}
+
+h3 {
+  margin-top: 20px; /* Space above team headers */
+}

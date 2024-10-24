@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Score App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="scripts/firebase.js"></script>
+    <script type="module" src="scripts/app.js"></script>
+    <script type="module" src="scripts/score_keeper.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Team A</h2>
+        <div class="team" id="teamA">
+            <ul id="teamAPlayers"></ul>
+        </div>
+        <button class="addPlayer" data-team="teamA">Add Player +</button>
+        
+        <h2>Team B</h2>
+        <div class="team" id="teamB">
+            <ul id="teamBPlayers"></ul>
+        </div>
+        <button class="addPlayer" data-team="teamB">Add Player +</button>
+    </div>
+    
+    <!-- Score Keeper Section -->
+    <div class="container">
+        <h2>Score Keeper</h2>
+        <div id="scoreBoard">
+            <div>
+                <h3>Team A</h3>
+                <p id="teamAScore">0</p>
+            </div>
+            <div>
+                <h3>Team B</h3>
+                <p id="teamBScore">0</p>
+            </div>
+        </div>
+        <button id="fetchScoresButton">Fetch Scores</button>
+        <button id="selectGameButton" onclick="location.href='/select_game'">Select Game</button>
+    </div>  
+</body>
+</html>
