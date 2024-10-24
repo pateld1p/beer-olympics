@@ -11,6 +11,7 @@
         }
     ],
     "routes": [
+        { "src": "/scripts/firebase.js", "dest": "/scripts/firebase.js" },  
         { "src": "/(.*)", "dest": "api/server.js" }  
     ]
 }
