@@ -1,5 +1,5 @@
 import { db } from '/scripts/firebase.js';
-import { collection, addDoc, getDocs } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js';
+import { collection, addDoc, getDocs } from "firebase/firestore";
 
 // Function to add player to Firestore
 async function addPlayer(team) {

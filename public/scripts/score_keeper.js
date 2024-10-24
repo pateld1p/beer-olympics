@@ -1,5 +1,5 @@
 import { db } from '/scripts/firebase.js';
-import { doc, getDoc } from 'https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js';
+import { doc, getDoc } from "firebase/firestore";
 
 // Function to fetch scores for Team A and Team B from the database
 async function fetchScores() {
